@@ -1,0 +1,48 @@
+body {
+ font-family:Arial, Helvetica, sans-serif;
+ padding: 20px;
+ background-image:url(https://www.arqhys.com/paisajes_naturales.html);
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr) /*300px 300px 300px*/;  
+    grid-auto-rows: auto;
+    gap: 10px;
+
+}
+.card{
+    padding: 20px;
+    border-radius:10px;
+    text-align: center;
+    width: 400px;
+    cursor: pointer; 
+}
+
+.paisajeuno{
+    background-color: blueviolet;
+
+}
+
+.paisajedos{
+    background-color: blue;
+}
+
+.paisajetres{
+    background-color: rgb(59, 173, 36);
+}
+
+.card img{
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 16/9; /*valor*/
+}
+
+/*media query indica q cuando se llegue a ese tamaño o menos las clases que estan dentro
+de las llaves van a cambiar a lo q digan*/
+
+@media (max-width: 768px){
+    .grilla{
+        grid-template-columns: 1fr;
+    }
+}
