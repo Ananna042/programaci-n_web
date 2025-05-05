@@ -1,0 +1,50 @@
+.caja-grande {
+    width: 700px;
+    height: 300px;
+    background-color: rgb(49, 48, 48);
+    padding: 25px; /* 🟢 Esto hace que la caja chica no esté pegada al borde */
+  }
+  
+  
+  .caja-chica {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(110, 110, 110);
+    border-radius: 10px;
+    position: relative; /* Necesario para posicionamiento absoluto interno */
+  }
+  
+  
+  .imagen {
+    width: 40%;  /* La imagen ocupará el 50% del ancho de la caja chica */
+    height: 100%;  /* La imagen ocupará el 100% de la altura de la caja chica */
+    object-fit: cover;  /* Ajusta la imagen para que no se distorsione */
+    border-radius: 10px;
+  
+  
+  }
+  
+  
+  .titulo {
+    font-size: 35px;
+    color: rgb(180, 180, 180);
+    position: absolute; /* Usamos absolute para posicionarlo dentro de la caja */
+    top: 10px; /* Puedes ajustar la distancia desde la parte superior */
+    left: 45%
+  }
+  
+  
+  .subtitulo {
+    font-size: 25px;
+    color: rgb(180, 180, 180);
+    position: absolute; /* Usamos absolute para posicionarlo dentro de la caja */
+    top: 60px; /* Puedes ajustar la distancia desde la parte superior */
+    left: 45%
+  }
+  
+  
+  
+  
+  
+  
+  
