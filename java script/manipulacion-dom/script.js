@@ -22,3 +22,4 @@ boton.addEventListener("click", function (){
 }); //definimos eventoss
 
 let tarea = document.getElementById("taskbutton").value;
+ 
